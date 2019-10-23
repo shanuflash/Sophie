@@ -15,6 +15,7 @@
 
 import time
 
+from aiogram.types.chat_permissions import ChatPermissions
 from aiogram.utils.exceptions import NotEnoughRightsToRestrict
 
 from telethon.tl.functions.channels import EditBannedRequest, GetParticipantRequest
@@ -282,8 +283,7 @@ async def mute_user(message, user_id, chat_id, time_val, no_msg=False):
         await bot.restrict_chat_member(
             chat_id,
             user_id,
-            time_val,
-            can_send_messages=False
+            permissions=ChatPermissions(can_send_messages=False, until_date=time_val)
         )
     except NotEnoughRightsToRestrict:
         raise NotEnoughRights('mute')
