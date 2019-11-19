@@ -126,10 +126,11 @@ def user_is_fed_admin(func):
             return False
         fed = mongodb.fed_list.find_one({'fed_id': group_fed['fed_id']})
         if not user_id == fed['creator']:
-            fadmins = mongodb.fed_admins.find({'fed_id': fed['fed_id'], 'admin': user_id})
+            fadmins = mongodb.fed_admins.find_one({'fed_id': fed['fed_id'], 'admin': user_id})
             if not fadmins:
                 await event.reply(get_string("feds", 'need_admin_to_fban', real_chat_id).format(
                     name=fed['fed_name']))
+                return
         return await func(event, *args, **kwargs)
     return wrapped_1
 
