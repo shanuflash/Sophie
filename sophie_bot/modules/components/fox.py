@@ -707,7 +707,7 @@ async def get_build_info(message, **args):
         files_dir = 'OrangeFox-Beta/'
 
     if f'{chat_type}_build' not in device:
-        text = f'This device not support {chat_type} builds, check '
+        text = f'This device does not support {chat_type} builds, check '
         if chat_type == 'stable':
             text += '<a href="https://t.me/joinchat/HNZTNkxOlyslccxryvKeeQ">OrangeFox Beta chat</a>'
         else:
