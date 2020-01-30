@@ -397,23 +397,7 @@ async def releasing(query, state):
     sf = False
 
     if build_type == 'stable':
-        # SourceForge
-        try:
-            cnopts = pysftp.CnOpts()
-            cnopts.hostkeys = None
-            with pysftp.Connection(host=SF_host, username=SF_user, password=SF_pass, cnopts=cnopts) as sftp:
-                with sftp.cd('/home/frs/project/orangefox'):
-                    if not sftp.isdir(codename):
-                        sftp.mkdir(codename)
-                    with sftp.cd('/home/frs/project/orangefox/' + codename):
-                        sftp.put(local_file)
-            new[f'{build_type}_sf'] = True
-            sf = True
-        except Exception as err:
-            await query.message.answer("Can't connect to SF, skipping!")
-            new[f'{build_type}_sf'] = False
-            sf = False
-            logger.error(err)
+        pass
 
     mongodb.ofox_devices.update_one({'codename': codename}, {'$set': new})
     mongodb.ofox_devices.update_one({'codename': codename}, {'$unset': {f'{build_type}_migrated': 1}})

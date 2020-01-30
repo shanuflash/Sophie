@@ -6,10 +6,11 @@ pymongo
 dnspython # needed to connect to cloud MongoDB instances
 cryptg
 cryptography
-pillow
+#pillow
 aiogram
 aioredis
 aiocron
 git+https://github.com/casics/nostril
 flask
 flask_bootstrap
+pysftp

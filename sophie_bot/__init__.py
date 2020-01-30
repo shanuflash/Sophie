@@ -65,7 +65,7 @@ TOKEN = CONFIG["basic"]["bot_token"]
 NAME = TOKEN.split(':')[0] + CONFIG["advanced"]["bot_name_additional"]
 
 # Init MongoDB
-mongodb = MongoClient(MONGO_CONN).sophie
+mongodb = MongoClient(MONGO_CONN).sophie_old
 
 # Init Redis
 redis = redis.StrictRedis(
