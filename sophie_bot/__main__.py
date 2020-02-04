@@ -18,6 +18,9 @@ import asyncio
 import signal
 import threading
 
+import sentry_sdk
+from sentry_sdk.integrations.redis import RedisIntegration
+
 from importlib import import_module
 
 from sophie_bot import CONFIG, tbot, redis, logger, dp, flask
@@ -27,10 +30,18 @@ from aiogram import executor
 
 LOAD_COMPONENTS = CONFIG["advanced"]["load_components"]
 CATCH_UP = CONFIG["advanced"]["skip_catch_up"]
+SENTRY_API_KEY = CONFIG["advanced"]["SENTRY_API_KEY"]
 
 LOADED_MODULES = []
 
 loop = asyncio.get_event_loop()
+
+logger.info("Starting sentry.io integraion...")
+
+sentry_sdk.init(
+    SENTRY_API_KEY,
+    integrations=[RedisIntegration()]
+)
 
 # Import modules
 for module_name in ALL_MODULES:

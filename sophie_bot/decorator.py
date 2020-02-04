@@ -20,6 +20,7 @@ from importlib import import_module
 from telethon import events
 from aiogram.dispatcher.handler import SkipHandler
 from aiogram import types
+from sentry_sdk import configure_scope
 
 from sophie_bot import BOT_USERNAME, CONFIG, tbot, dp
 from sophie_bot.modules.helper_func.error import report_error
@@ -100,6 +101,11 @@ def command(commands, allow_edited=True, allow_kwargs=False, args=True, **kwargs
         async def new_func(message, *args, **def_kwargs):
             if RATE_LIMIT and await prevent_flooding(message, commands[0]) is False:
                 return
+
+            # Sentry
+            with configure_scope() as scope:
+                scope.set_extra("update", str(message))
+
             if allow_kwargs is False:
                 def_kwargs = dict()
             await func(message, *args, **def_kwargs)

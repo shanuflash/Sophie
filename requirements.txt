@@ -4,7 +4,6 @@ ujson
 redis
 pymongo
 dnspython # needed to connect to cloud MongoDB instances
-cryptg
 cryptography
 #pillow
 aiogram
@@ -14,3 +13,5 @@ git+https://github.com/casics/nostril
 flask
 flask_bootstrap
 pysftp
+sentry_sdk
+
