@@ -310,276 +310,265 @@
     },
     "HELPS": {
         "notes": {
-            "btn": "Заметки",
-            "title": "Заметки хороши для сохранения любой важной для вас информации; номер телефона, прикольная gif, смешная картинка - всё что угодно!",
+            "btn": "Notes",
+            "title": "Notes are great to save random tidbits of information; a phone number, a nice gif, a funny picture - anything!",
             "text": {
-                "i1": "\n**Доступные команды:**",
-                "i2": "- /save <имя> <данные>: Ответьте на сообщение, чтобы сохранить это сообщение. Работает даже с медиа!",
-                "i3": "- /get <имя>: получить заметку.",
-                "i4": "- /clear <имя>: удалить заметку",
-                "i5": "- /notes: Список всех заметок",
-                "i6": "- /saved: то же что и /notes",
-                "i7": "- /noteinfo <имя>: Показать подробную информацию о заметке, кто обновил и создал заметку",
-                "i8": "\nПример того, как сохранить заметку:",
-                "i9": "`/save данные Это тестовая заметка!`",
-                "i11": "\nТеперь каждый, кто напишет `/get дата`, или `#дата` будет получать `Это тестовая заметка!`.",
-                "i12": "\nЕсли вы хотите сохранить изображение, gif, стикер или любые другие данные, сделайте следующее:",
-                "i13": "Команда `/save слово` , отправленная в ответ на стикер или любые другие данные, позволяет сохранить их.",
-                "i14": "\nСовет: чтобы получить заметку без форматирования, используйте формат `/get имя_вашей_заметки noformat`",
-                "i15": "Вывод заметки для редактирования."
+                "i1": "\n<b>Available commands are:</b>",
+                "i2": "- /save (name) (data): Replying to a message will save that message. Even works on media!",
+                "i3": "- /get (name): get the note registered to that word.",
+                "i4": "- /clear (name): deletes the note",
+                "i5": "- /notes: Lists all notes",
+                "i6": "- /saved: same as /notes",
+                "i7": "- /noteinfo (name): Shows detailed info about note, who updated and created note",
+                "i8": "\nAn example of how to save a note would be via:",
+                "i9": "`/save data This is example note!`",
+                "i11": "\nNow, anyone using <code>/get data</code>, or <code>#data</code> will be replied to with <code>This is example note!</code>.",
+                "i12": "\nIf you want to save an image, gif, or sticker, or any other data, do the following:",
+                "i13": "`save word` while replying to a sticker or whatever data you'd like. Now, the note at `#word` contains a sticker which will be sent as a reply.",
+                "i14": "\nTip: to retrieve a note without the formatting, use `/get (name) noformat`",
+                "i15": "This will retrieve the note and send it without formatting it; getting you the raw markdown, allowing you to make easy edits."
             },
             "buttons": {
-                "help_btn_notes_btns": "Кнопки",
-                "help_btn_notes_md": "Разметка",
-                "help_btn_notes_vars": "Переменные",
-                "help_btn_notes_html": "HTML",
-                "help_btn_notes_enc": "Шифрование"
+                "btns": "Buttons",
+                "md": "Markdown",
+                "vars": "Special vars",
+                "html": "HTML",
+                "enc": "Encryption"
             },
             "vars": {
-                "a1": "Вы можете использовать специальные переменные в заметках, здесь список:",
-                "a2": "`{first}` - Имя, должно быть что-то вроде \"Майк\"",
-                "a3": "`{last}` - фамилия, должно быть что-то вроде \"Смит\"",
-                "a4": "`{fullname}` - полное имя, должно быть что-то вроде \"Майк Смит\"",
-                "a5": "`{username}` - даёт имя пользователя, например '@MikeSmith009'",
-                "a6": "`{mention}` - Выдаёт ссылку пользователя, например [SophieBot](https://t.me/rSophieBot)",
-                "a7": "`{id}` - выдаёт id пользователя, например '885745757'",
-                "a8": "`{chatname}` - Выдаёт названия чата, например: \"SophieBot chat\""
+                "a1": "You can use special variable in notes, here is a list of it:",
+                "a2": "<code>{first}</code> - First name, will something like 'Mike'",
+                "a3": "<code>{last}</code> - Last name, ex. 'Smith'",
+                "a4": "<code>{fullname}</code> - Full name, ex. 'Mike Smith'",
+                "a5": "<code>{username}</code> - Gives the username, ex. '@MikeSmith009'",
+                "a6": "<code>{mention}</code> - Gives the link to user, ex. <a href=\"https://t.me/rSophieBot/\">Sophie</a>",
+                "a7": "<code>{id}</code> - Gives the id of the user, ex. '885745757'",
+                "a8": "<code>{chatname}</code> - Gives the current chat name, ex. 'Sophie chat'"
             },
             "md": {
-                "a1": "Вы можете использовать разметку для того, чтобы сделать ваши сообщения более выразительными. Это разметка, которая в настоящее время поддерживается:\n",
-                "a2": "<code>`код`</code>: кавычки разрешают Вам написать Ваши слова в моноширинном шрифте. Показывается как: <code>code words</code>",
-                "a3": "<code>**слова жирным шрифтом**</code>: звёздочки используются для жирного шрифта. Shows as: <b>слова жирным шрифтом</b>",
-                "a4": "<code>__слова курсивом__</code>: нижние подчёркивания используются для курсива. Показывается как: <i>слова курсивом</i>",
-                "a5": "<code>[hyperlink](example.com)</code>: это используется для гиперссылок, и будет показано как: <a href=\"http://example.com/\">гиперссылка</a>. Будьте уверены что Вы не добавили каких-либо дополнительных пробелов между ] и ( иначе это будет не правильная разметка."
+                "a1": "You can use markdown to make your messages more expressive. This is the markdown currently supported:\n",
+                "a2": "<code>`code words`</code>: backticks allow you to wrap your words in monospace fonts. Shows as: <code>code words</code>",
+                "a3": "<code>**bold words**</code>: asterixes are used for bold font. Shows as: <b>bold words</b>",
+                "a4": "<code>__italic words__</code>: underscores are used for italics. Shows as: <i>italic words</i>",
+                "a5": "<code>[hyperlink](example.com)</code>: this is used for hyperlinks, and will show as such: <a href=\"http://example.com/\">hyperlink</a>. Make sure not to add any extra spaces between the ] and the ( or it won't be valid markdown."
             },
             "html": {
-                "a1": "Markdown лёгок, но когда Вам нужно создать много заметок, заметка за заметкой, Вы увидите значительные недостатки, каждый лишний символ '*' может сломать вашу идеальную заметку.",
-                "a2": "Что на счёт HTML? Давайте попробуем использовать его в разметке. Пожалуйста, прочитайте перед этим справку об Markdown.",
-                "a3": "\nЧтобы использовать HTML в заметках добавьте `[format:html]` в конец заметки, Вы можете полностью отключить форматирование заметки используя `[format:none]`.\n",
-                "a4": "HTML-разметка:",
-                "a5": "`<code>код</code>`: будет показано как '`синий текст`'",
-                "a6": "`<b>жирный текст</b>`: будет показано как **жирный текст**",
-                "a7": "`<i>курсивный текст</i>`: будет отображаться как __курсивный текст__",
-                "a8": "`<a href=\"http://example.com/\">hyperlink</a>`: Пример гиперссылки, будет показано как [hyperlink](example.com)"
+                "a1": "Markdown is easy, but when you will be making many notes, note by note, you will see obvious flaws, every extra '*' can broke your perfect note.",
+                "a2": "How about HTML? Let's try use it instead of markdown. Please read before the 'Markdown' guide.",
+                "a3": "\nTo use the HTML in the note add the `[format:html]` to the end of note, you can fully disable formatting note by `[format:none]`.\n",
+                "a4": "HTML markdown:",
+                "a5": "`<code>code words</code>`: will shows as '`blue text`'",
+                "a6": "`<b>bold text</b>`: will shows as **bold text**",
+                "a7": "`<i>italic text</i>`: will shows as __italic text__",
+                "a8": "`<a href=\"http://example.com/\">hyperlink</a>`: Example of hyperlink, will shown as [hyperlink](example.com)"
             },
             "btns": {
-                "a1": "Создание кнопок не так тяжело как вы ожидаете. В отличии от остальных ботов, SophieBot имеет много типов кастомных кнопок, давайте попробуем использовать их!",
-                "a2": "Давайте начнём с обычных url кнопок, url кнопки имеют такой синтаксис: `[Название кнопки](buttonurl:https://url.com)`.",
-                "a3": "\nХорошо, Вы добавили много кнопок в Ваше сообщение, но это выглядит ужасно? Вы ходите сделать много кнопок в ряду? Это Вам поможет:",
-                "a4": "Добавьте `:same` в конец Вашей ссылки; это установит её в той же строке, что и первую. Для примера:",
-                "a5": "`[Кнопка 1](buttonurl:https://url.com)`\n[Кнопка 2](buttonurl:https://url.com:same)",
-                "a6": "Вы можете установить более чем 2 кнопки в строке, не переусердствуйте.",
-                "a7": "\nХорошо, вы только что создали заметку с множеством кнопок, вы увидите что вам не хватит просто url кнопок для ваших задач, посмотрите другие:",
-                "a8": "- `[Имя кнопки](buttonnote:name_of_note)`: С этой кнопкой вы получите заметку в личные сообщение с ботом, это уменьшит спам в группе.",
-                "a9": "- `[Имя кнопки](buttonalert:name_of_note)`: Эта кнопка покажет поп-ап с заметкой (Обратите внимание, поп-апы поддерживают только текст), например, это может быть сделано для правил, вы ограничены только вашей фантазией и 200 символами для поп-апов",
-                "a10": "- `[Имя кнопки](deletemsg:admin)`: Некоторые заметки использутся в качестве предупржение или фильтра, после его прочтения оно остается в чате, не правдо ли это спам? Эта кнопка будет удалять сообщение, она имеет аргумент для котроля права на удаление, это `user` или `admin`.",
-                "a11": "\nСоздайте ваши красивые и функциональные заметки с помощью SophieBot."
+                "a1": "Making buttons isn't so hard as you expected. Unlike other bots Sophie have many types of custom buttons, let's try to use it!",
+                "a2": "Lets start by default url buttons, url buttons have such syntax <code>[Button name](buttonurl:https://url.com)</code>.",
+                "a3": "\nOk, you added many buttons to your message, but it looks ugly? You wanna make few buttons per line? This will help you:",
+                "a4": "Add <code>:same</code> at the end of your link; it'll set it on the same line as the other one. For example:",
+                "a5": "<code>[Button 1](buttonurl:https://url.com)</code>\n[Button 2](buttonurl:https://url.com:same)",
+                "a6": "You can set more than 2 buttons per row, do not overdo it.",
+                "a7": "\nOk, you just created you note with many buttons, you will see that you do not have enough just url buttons, see other's:",
+                "a8": "- <code>[Button name](buttonnote:name_of_note)</code>: With such types of button you will get a note in your PM, this done to prevent spamming notes in pm.",
+                "a9": "- <code>[Button name](buttonalert:name_of_note)</code>: This one will show you popup with note data (Warning, only text supported by popups), for example this can be done for rules, you are limited only by your imagination and by 200 symbols limit for popups",
+                "a10": "- <code>[Button name](deletemsg:admin)</code>: Some notes used by warning, or notify, after reading it it leaving in chat, it spammy, right? This button will remove message, it have argument to control which one can be remove message `user` or `admin`.",
+                "a11": "\nCreate your beautiful and functional notes with Sophie."
             },
             "enc": {
-                "a0": "София уважает вашу приватность, Вы можете зашифровать Ваши заметки чтобы сохранить приватность.",
-                "a1": "По умолчанию все заметки зашифрованы.",
-                "a2": "Просто добавьте `[encryption:fully]` в текст заметки, чтобы полностью зашифровать его с запросом пароля.",
-                "a3": "Например:",
-                "a4": "`/save test_note Сохранение тестовой заметки [encryption:fully]`",
-                "a5": "\nВы также можете полностью отключить шифрование с помощью `[encryption:no]`"
+                "a0": "Sophie respects your privacy, you are allowed to encrypt your notes to save your data privacy.",
+                "a1": "By default all notes are encrypted with particle method.",
+                "a2": "Just add a `[encryption:fully]` in note text to encrypt it fully with password requesting.",
+                "a3": "Example:",
+                "a4": "<code>/save test_note This is a text of test_note [encryption:fully]</code>",
+                "a5": "\nYou can also disable encryption fully by <code>[encryption:no]</code>"
             }
         },
         "purges": {
-            "btn": "Чистка",
-            "title": "Нужно удалить много сообщений? Для этого и нужна чистка!",
+            "btn": "Purges",
+            "title": "Need to delete a lot of messages? That's what purges are for!",
             "text": {
-                "i1": "\n**Доступные команды:**",
-                "i2": "- /purge: удаляет все сообщения от ответа на сообщение, к текущему сообщению.",
-                "i3": "- /del: удаляет сообщение, на которое вы ответили."
+                "i1": "\n<b>Available commands are:</b>",
+                "i2": "- /purge: deletes all messages from the message you replied to, to the current message.",
+                "i3": "- /del: deletes the message you replied to."
             }
         },
         "warns": {
-            "btn": "Предупреждения",
-            "title": "Держите участников вашей группы в приемлемых рамках с помощью предупреждений; помешайте им выходить из-под контроля!",
+            "btn": "Warnings",
+            "title": "Keep your members in check with warnings; stop them getting out of control!",
             "text": {
-                "i1": "\n**Доступные команды:**",
-                "i2": "- /warn (причина): предупреждайте пользователя по указанной причине.",
-                "i3": "- /warns: возвращает список предупреждений пользователя.",
-                "i5": "- /resetwarns: сбросить все предупреждения пользователя.",
-                "i6": "- /setwarnlimit: устанавливает количество предупреждений перед перед наказанием пользователя.",
-                "i7": "\nЕсли вы ищете способ автоматического предупреждения пользователей, когда они говорят некоторые вещи, перейдите в модуль черных списков.",
-                "i8": "\nПример того, как сделать новое многословное предупреждение:",
-                "i9": "`/warn @user Люблю варнить просто так, я же админ`",
-                "i10": "\nЭто предупредит пользователя, вызванного @user, с целью 'Люблю варнить просто так, я же админ'"
+                "i1": "\n<b>Available commands are:</b>",
+                "i2": "- /warn (reason): warns a user for the specified reason.",
+                "i3": "- /warns: returns the list of warns, with reasons, for that user.",
+                "i5": "- /resetwarns: resets all of a user's warns.",
+                "i6": "- /warnlimit (number): sets the number of warns before an action is taken upon the user.",
+                "i7": "\nIf you're looking for a way to automatically warn users when they say certain things, go to the blacklists module.",
+                "i8": "\nAn example of how to set a new multiword warning:",
+                "i9": "`/warn @user Because warning is fun`",
+                "i10": "\nThis will warn the user called @user, with a reason of 'Because warning is fun'."
             }
         },
         "misc": {
-            "btn": "Прочее",
-            "title": "Модуль \"всякая всячина\" для небольших простых команд",
+            "btn": "Misc",
+            "title": "An \"odds and ends\" module for small, simple commands which don't really fit anywhere",
             "text": {
-                "i1": "\n**Доступные команды:**",
-                "i2": "- /id: получить идентификатор пользователя и чата.",
-                "i3": "- /stats: показать статистику бота.",
-                "i4": "- /botchanges: показать изменения бота (история коммитов)",
-                "i5": "- /runs: отвечает со случайно сгенерированной \"run away\"строкой.",
-                "i6": "- /paste (текст): Вставляет текст на Dogbin."
+                "i1": "\n<b>Available commands are:</b>",
+                "i2": "- /id: gives an ID of user and chat.",
+                "i3": "- /stats: shows bot stats.",
+                "i4": "- /botchanges: shows bot changes (commit history)",
+                "i5": "- /runs: responds with a randomly generated 'run away' string.",
+                "i6": "- /paste (text): Pastes text to the Dogbin."
             }
         },
         "connections": {
-            "btn": "Соединения",
-            "title": "Иногда вы просто хотите добавить некоторые заметки и фильтры в групповой чат, но вы не хотите, чтобы кто-либо это видел; Здесь вам помогут соединения...",
+            "btn": "Connections",
+            "title": "Sometimes, you just want to add some notes and filters to a group chat, but you don't want everyone to see; This is where connections come in...",
             "text": {
-                "i0": "Это позволяет вам подключиться к базе данных чата и добавлять в нее вещи без сообщений, которые знают об этом! По очевидным причинам, вам нужно быть администратором для добавления вещей; но любой участник может просматривать ваши данные. (забаненные/кикнутые пользователи не могут!)",
-                "i1": "\n**Доступные команды:**",
-                "i2": "- /connect <chat>: подключитесь к чату с именем пользователя/ID чата, позволяя вам просматривать/редактировать содержимое.",
-                "i3": "- /connect: показать последние 3 чата для быстрого подключения.",
-                "i4": "\nВы можете получить идентификатор чата, используя команду /id в вашем чате. Не удивляйтесь, если id отрицательный; у всех супергрупп отрицательный идентификатор."
+                "i0": "This allows you to connect to a chat's database, and add things to it without the chat knowing about it! For obvious reasons, you need to be an admin to add things; but any member can view your data. (banned/kicked users can't!)",
+                "i1": "\n<b>Available commands are:</b>",
+                "i2": "- /connect (chat): connects to the chat with chat username/ID, allowing you to view/edit contents.",
+                "i3": "- /connect: shows last 3 chats to fast connect.",
+                "i4": "\nYou can retrieve the chat ID by using the /id command in your chat. Don't be surprised if the id is negative; all super groups have negative ids."
             }
         },
         "greetings": {
-            "btn": "Приветствие",
-            "title": "Дайте своим членам теплое приветствие с модулем приветствия! Или грустное прощание... :(",
+            "btn": "Greetings",
+            "title": "Give your members a warm welcome with the greetings module!",
             "text": {
-                "i0": "Приветствия, это заметки при входе нового пользователя, используйте /setwelcome чтобы настроить приветствие.",
-                "i1": "\n**Доступные команды:**",
-                "i2": "- /setwelcome <note>: задает приглашение!",
-                "i3": "- /cleanservice: Удалить служебные сообщения Telegram о входе и выходе пользователя из чата.",
-                "i4": "- /cleanwelcome: Удаляет старые приветственные сообщения; когда новый человек присоединяется, старое сообщение удаляется.",
-                "i5": "- /welcomesecurity <off/soft/hard>: soft - ограничивает пользователей в возможности присылать медиа файлы на протяжении 24 часов, hard - ограничивает пользователей в возможности присылать сообщения, пока они не нажмут на кнопку 'Я не робот'",
-                "i6": "- /welcomesecurity <off/soft/hard>: soft - restrict user's permission to send media files for 24 hours, hard - restict user's permission to send messages until they click on the button 'I'm not a bot'",
-                "i7": "- /setwelcome off: отключить приветствие в чате.",
-                "i8": "- /cleanservice: Удалять сервисные сообщения Telegram о том, что пользователь присоединился или покинул чат.",
-                "i9": "- /cleanwelcome: Удалять старые сообщения с приветствием; когда присоединяется новый участник, старое сообщение удаляется.",
-                "i10": "- /welcomesecurity <off/soft/hard>: soft - запретить пользователям отправлять медиа файлы в течение 24 часов; hard - запретить пользователям отправлять сообщения до нажатия кнопки 'Я не бот'"
+                "i0": "Welcomes are a note trigger, use /setwelcome to set welcome trigger to note.",
+                "i1": "\n<b>Available commands are:</b>",
+                "i2": "- /setwelcome (notename): sets your new welcome note!",
+                "i3": "Note: Please keep in mind, Sophie uses notes for welcome, you must create note with welcome text and set note as welcome.",
+                "i4": "Steps:",
+                "i5": "1. Create note with your welcome",
+                "i6": "2. /setwelcome notename\n",
+                "i7": "- /setwelcome off: disable welcome in chat.",
+                "i8": "- /cleanservice: Remove Telegram service messages about user joined or leaved chat.",
+                "i9": "- /cleanwelcome: Deletes old welcome messages; when a new person joins, the old message is deleted.",
+                "i10": "- /welcomesecurity [off/soft/hard]: soft - restricts user's permission to send media files for 24 hours, hard - restict user's permission to send messages until they click on the button 'I'm not a bot'."
             }
         },
         "filters": {
-            "btn": "Фильтры",
-            "title": "Сделайте ваш чат оживлённее с помощью фильтров; Бот будет отвечать на определенные слова!",
+            "btn": "Filters",
+            "title": "Make your chat more lively with filters",
             "text": {
-                "i1": "**Доступные команды:**",
-                "i2": "- /filter <слово> <действие> <аргумент, не во всех действиях> : Каждый раз когда кто-то напишет 'слово', бот выполнят указанное действие.",
-                "i3": "- /filter '<слова>' <действие> <аргумент, не во всех действиях> : Делает тоже самое, что и предыдущая команда, но поддерживает много слов для одного фильтра",
-                "i4": "\n**Доступные действия:**",
-                "i5": "- note: например: `/filter foo note <notename>`: бот ответит на сообщение, в котором есть 'foo' заметкой, которую Вы укажете.",
-                "i6": "- delete: например: `/filter foo delete`: бот удалит сообщение пользователя, в котором есть 'foo'.",
-                "i7": "- tban: например: `/filter foo tban 10m`: бот забанит пользователя, который отправит сообщение, которое включает 'foo' на '10m' (minutes, минут) , Вы можете дать любое значение (m , h, d)",
-                "i8": "- ban: например: `/filter foo ban`: бот забанит пользователя, который отправит сообщение включающее 'foo'",
-                "i9": "- mute: например: `/filter foo mute`: бот замутит пользователя (навсегда), который отправил 'foo'",
-                "i10": "- tban: например: `/filter foo tban 10m`: бот затбанит, когда кто-то отправит сообщение, включающее 'foo' на '10m' (минут), вы можете указать любую переменную (m, h, d)",
-                "i11": "- kick: например: `/filter foo kick`: бот кикнет пользователя, который отправит сообщение, включающее 'foo'",
-                "i12": "- /filters: Бот покажет список активных фильтров в чате!",
-                "i13": "- /stop <filter name>: Остановит указанный фильтр",
-                "i14": "- kick: например: `/filter foo kick`: бот кикнет пользователя, который отправил сообщение, включающее 'foo'"
+                "i1": "<b>Available commands are:</b>",
+                "i2": "- /addfilter: Add a new filter in your chat.",
+                "i4": "- /filters: Will display all filters in that chat!",
+                "i5": "- /delfilter (keyword/key words) : Will stop the given filter names"
             }
         },
         "federations": {
-            "btn": "Федерация",
-            "title": "Ах, управление группой. Это все весело, пока вы не начнете получать спам, вам нужно будет блокировать спамеров. Вы начнете банить больше и больше, и веселье становится болью. Но когда у вас есть несколько групп, и вы не хотите, чтобы эти спамеры не были ни в одной из ваших групп - что вы можете сделать? Неужели вы должны банить их вручную, во всех ваших группах?",
+            "btn": "Federations",
+            "title": "Group management.. It's fun, until you start getting spammers in all your chats, and you need to ban them. Then you need to start banning more, and more, and it gets painful. How can you deal? Do you have to ban them manually, in all your groups?",
             "text": {
-                "i0": "Скажите этому - Нет! С Федерациями вы можете заблокировать в одном чате, а остальные автоматически подтянут эти блокировки. Вы даже можете назначать администраторов федераций, чтобы самые честные администраторы, могли блокировать во всех чатах, которые вы хотите защитить.",
-                "i1": "\n**Доступные команды:**",
-                "i2": "- /newfed <fedname>: Создает новую федерацию с указанным именем. Пользователям разрешено владеть только одной федерацией.",
-                "i3": "- /joinfed <FedID>: Присоединяйтесь к текущему чату в федерацию. Каждый чат может быть только в одной федерации. Только владельцы чата могут это сделать.",
-                "i4": "- /finfo: Показывает информацию про данную Федерацию чата, Вы можете использовать /finfo <FedID> - чтобы увидеть информацию о другой Федерации.",
-                "i5": "\nАдминистраторы федерации, они могут использовать Блокировку в федерации, чтобы контролировать они могут использовать следующие команды:",
-                "i6": "- /fpromote <user>: Выдает права Администратора Федерации в вашей федерации.",
-                "i7": "- /fdemote <user>: Отнимает права администратора федерации и превращает в обычного пользователя в вашей федерации.",
-                "i8": "\nТолько для администраторов федерации:",
-                "i9": "- /fban <user>: Блокирует пользователя в данной Федерации чата.",
-                "i10": "- /unfban <user>: Разблокирует пользователя в данной Федерации чата.",
-                "i11": "\nДругие команды:",
-                "i12": "/fchats: Показать список чатов, которые связаны с Федерацией."
+                "i0": "No more! With federations, you can make a ban in one chat overlap to all your other chats. You can even appoint federation admins, so that your trustworthiest admins can ban across all the chats that you want to protect.",
+                "i1": "\n<b>Available commands are:</b>",
+                "i2": "- /newfed (fedname): Creates a new federation with the given name. Users are allowed to own one federation only. Using this method when you already have a fed will simply change the federation name.",
+                "i3": "- /joinfed (FedID): Joins the current chat to the federation. Each chat can only be in one federation. Only chat owners can do this.",
+                "i4": "- /finfo: Shows info about current chat Federation, you can <code>/finfo (Fed ID)</code> - to see info about other Federation.",
+                "i5": "\nFederation admins, they can use a fban command and others, to control they use this commands:",
+                "i6": "- /fpromote (user): Promotes the user to fed admin in your fed.",
+                "i7": "- /fdemote (user): Demotes the user from fed admin to normal user, in your fed.",
+                "i8": "\nOnly to Federation admins:",
+                "i9": "- /fban (user): Bans a user from the current chat's federation.",
+                "i10": "- /unfban (user): Unbans a user the current chat's federation.",
+                "i11": "/fchats: Shows a list of all chats which connected to your Federation."
             }
         },
         "disabling": {
-            "btn": "Выключение",
-            "title": "Не всем нравится все фичи SophieBot, иногда некоторые вызывают спам в вашей группе вы можете захотеть выключить что-нибуть.",
+            "btn": "Disabling",
+            "title": "You might not like all the Sophie's features and wanna disable something to reduce spam in your group? If yes!, then this module is for you!",
             "text": {
-                "a1": "**Доступные команды:**",
-                "a2": "- /disable <command>: Выключить команду",
-                "a3": "- /enable <command>: Включить команду",
-                "a4": "/disablable: Посмотрите на список команд, которые могут быть выключены.",
-                "a5": "- /disabled: Список отключенных команд в текущем чате."
+                "i1": "<b>Available commands are:</b>",
+                "a2": "- /disable (command): Disables the command",
+                "a3": "- /enable (command): Enables the command",
+                "a4": "- /disablable: See command list which commands can be disabled.",
+                "a5": "- /disabled: List of disabled commands in current chat."
             }
         },
         "pin": {
-            "btn": "Закрепление",
-            "title": "Вы хотите закрепить сообщение? Вперёд!",
+            "btn": "Pinning",
+            "title": "You wanna pin the message? Here you go.",
             "text": {
-                "a1": "**Доступные команды:**",
-                "a2": "- /pin: закрепить сообщение на которое Вы ответили; добавьте 'loud' чтобы отослать уведомление всем членам группы.",
-                "a3": "- /unpin: Открепить сообщение."
+                "i1": "<b>Available commands are:</b>",
+                "a2": "- /pin: pins the message you replied to; add 'loud' to send a notification to group members.",
+                "a3": "- /unpin: Unpins the message."
             }
         },
         "lang": {
-            "btn": "Язык",
-            "title": "Не каждый может идеально разговаривать на Английском, SophieBot имеет систему перевода, Используйте ее!",
+            "btn": "Language",
+            "title": "Not everyone can speak with perfect English, Sophie have a translation system, check it out.",
             "text": {
-                "a1": "**Доступные команды:**",
-                "a2": "/lang: Покажет кнопки со всеми языками и покажет текущий язык.",
-                "a3": "/lang <lang>: Изменит язык без нажатия на кнопки.",
-                "a4": "\nНе все языки сейчас поддерживаются, помогите нам с переводом на [our crowdin page](https://crowdin.com/project/sophiebot)"
+                "i1": "<b>Available commands are:</b>",
+                "a2": "/lang: Will show a buttons with all languages and it will show current chat language.",
+                "a3": "/lang (lang): Will change the language without selecting it with buttons.",
+                "a4": "\nNot all the languages are currently supported, help us with translation on <a href=\"https://crowdin.com/project/Sophie\">our crowdin page</a>"
             }
         },
         "rules": {
-            "btn": "Правила",
-            "title": "Добавьте в чат свои правила",
+            "btn": "Rules",
+            "title": "Save your chat with your rules",
             "text": {
-                "a1": "**Доступные команды:**",
-                "a2": "- /setrules (notename): Добавить правила",
-                "a3": "Note: Please keep in mind, SophieBot use notes for rules, you must create note with rules text and set it",
-                "a4": "Шаги:",
-                "a5": "1. Создайте заметку с своим приветствием",
-                "a6": "2. /setwelcome имя_заметки",
-                "a7": "\nКнопка правил появится в сообщении с предупреждением"
+                "i1": "<b>Available commands are:</b>",
+                "a2": "- /setrules (notename): Set the rules",
+                "a3": "Note: Please keep in mind, Sophie uses notes for rules, you must create note with rules text and set it",
+                "a4": "Steps:",
+                "a5": "1. Create note with your rules",
+                "a6": "2. /setrules (notename)",
+                "a7": "\nRules button will appear in the warn message"
             }
         },
         "privacy": {
-            "btn": "Конфиденциальность и безопасность",
-            "title": "София уважает вашу конфиденциальность.",
+            "btn": "Data privacy and security",
+            "title": "Sophie respects your privacy.",
             "text": {
-                "a1": "Команда Sophie постоянно улучшает конфиденциальность и безопасность.",
-                "a2": "\n* Сервер, который запускает Sophie:",
-                "a3": "- Мы используем сервер, предоставленный vultr в Амстердаме",
-                "a4": "- Никто из суперпользователей не имеет доступа к этому",
-                "a5": "- Мы запустили собственный менеджер паролей и используем его каждый день (мы доверяем собственному серверу пароль)",
-                "a6": "- Сервер защищенный ssh ключами и включен ufw"
+                "a1": "Sophie team constantly improve privacy and security.",
+                "a2": "\n* Server which run Sophie:",
+                "a3": "- We use a server provided by vultr in Amsterdam.",
+                "a4": "- None of the SUDO have access to it.",
+                "a5": "- Server is totally secured by ssh keys and have enabled ufw."
             },
             "buttons": {
-                "help_btn_privacy_collection": "Какие данные мы собираем",
-                "help_btn_privacy_removing": "Удаление данных"
+                "collection": "Data which we collect",
+                "removing": "Removing your data"
             },
             "collection": {
-                "a1": "Команда SophieBot уважает вашу конфиденциальность",
-                "a2": "* Мы не собираем ваши данные о конфиденциальности",
-                "a3": "* Мы не храним ваши сообщения или информацию о ваших сообщениях",
-                "a4": "\n* Мы собираем только данные, сохраненные в Sophie (например, заметки)",
-                "a5": "* Мы собираем данные пользователей:",
-                "a6": "- Мы собираем имя и фамилию, id пользователя и id чата",
-                "a7": "- Нам нужна эти данные для быстрого поиска пользователя с помощью никнейма (например, если Вы напишите /warn @кто-то)",
-                "a8": "- Мы никогда не используем эти данные для создания профилей пользователей, это лишь некоторая информация, чтобы сделать Sophie быстрее и независимой от запросов Telegram",
-                "a9": "\n* Мы собираем данные чата:",
-                "a10": "- Мы сохраняем имя чата и id чата, мы не сохраняем админов и создателей чата",
-                "a11": "- Мы не используем данные чатов в аналитике",
-                "a12": "- Нам нужны эти данные чтобы София поддерживала мультичатовые операции, например оповещения, соединения и т. д.",
-                "a13": "\n* Аналитика:",
-                "a14": "- Мы используем только Софийные общие метрики для скорости, количесто типов данных во всех чатах",
-                "a15": "- Мы логируем ошибки, которые генерируются Софией (Они имеют очень ограниченную информацию, только строку ошибку и дату)",
-                "a16": "- Мы регистрируем гбаны, которые сделали суперпользователи (с загбаненным id пользователя)"
+                "a1": "Sophie team respects your privacy",
+                "a2": "* We don't collect your privacy data",
+                "a3": "* We don't save your messages or any info about your messages",
+                "a4": "\n* We collect only data which saved in Sophie (ex. notes)",
+                "a5": "* We are collecting users public data only:",
+                "a6": "- We collect first and last names, used id and a used_id",
+                "a7": "- We need this data for fast finding the user by nickname (ex. if you typing /warn @someone)",
+                "a8": "- We never use this data to make user profiles, it's just a some info to make Sophie faster and independent from Telegram's requests",
+                "a9": "\n* We collect chat datas:",
+                "a10": "- We save the chat name and chat id, we don't save chat admins and creators",
+                "a11": "- We don't use chats data in analytics",
+                "a12": "- We need this data to make Sophie support operations in multiple chats, for example broadcasts, connections, etc.",
+                "a13": "\n* Analytics:",
+                "a14": "- We use ONLY Sophie general metrics as speed, count of data types in all chats",
+                "a15": "- We auto-log errors which generated by Sophie (They have very limited info, only a error string and date)",
+                "a16": "- We log a gbans which done by SUDO's (with gbanned user_id)",
+                "a17": "\n* Crashlitycs:",
+                "a18": "Sophie saving event message in case if crash happend, that info can be used only for improving Sophie, nobody can't see it except a bot owner.",
+                "a19": "If you don't wont give your events on crashes pm @MrYacha for blacklisting your ID or whole your chat."
             },
             "removing": {
-                "a1": "Сейчас, невозможно сделать это автоматическим, но в команде Софии всё возможно.",
-                "a2": "Вы можете попросить @MrYacha чтобы он сделал это."
+                "a1": "Right now there is no way to do it automatically, but it is in Sophie team To-Do list.",
+                "a2": "However you can ask @MrYacha to do it manually."
             }
         },
         "reports": {
-            "btn": "Репорты",
-            "title": "Репортни пользователя, который надоел, админу.",
+            "btn": "Reports",
+            "title": "Report an annoying user to admins.",
             "text": {
-                "a1": "**Доступные команды туть.**",
-                "a2": "- /reports: Показать текущий отчётный статус. Доступна для админов и обычных пользователей.",
-                "a3": "- /reports (**yes** и **no**)/(**no** или **off**).\nДоступна **только** для админов. Пример: /reports on",
-                "a4": "- /report (@пользователь) (причина): Сообщи админам, что кто-то ведёт себя плохо. Пример: /report @бака2281337 отправил непристойный стикер.",
-                "a5": "- @admin причина: То же, что и комманда выше, но **не** поддерживает кастомные теги для репортов. Например: *ответ на сообщение нарушителя* @admin нарушитель."
+                "i1": "<b>Available commands are:</b>",
+                "a4": "- /report (@user) (reason): Report a user to admins. Users only. Ex: /report @baduser bad user.",
+                "a5": "- @admin reason: Same as upper command but doesn't support custom tags to report."
             }
         }
-    },
+     },
     "RANDOM_STRINGS": {
         "RUNS": {
             "1": "Оу, этот чел никогда не уйдет отсюда.",
