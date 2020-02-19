@@ -183,7 +183,7 @@ async def purge_caches(message):
     await message.reply("Redis cache was cleaned.")
 
 
-@decorator.command("botstop", is_owner=True)
+@decorator.command("botstop", is_sudo=True)
 async def bot_stop(message):
     await message.reply("Goodbye...")
     exit(1)
