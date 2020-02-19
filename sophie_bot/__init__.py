@@ -59,7 +59,7 @@ API_ID = CONFIG["basic"]["app_id"]
 API_HASH = CONFIG["basic"]["app_hash"]
 MONGO_CONN = CONFIG["basic"]["mongo_conn"]
 MONGO_PORT = CONFIG["basic"]["mongo_port"]
-REDIS_COMM = CONFIG["basic"]["redis_conn"]
+REDIS_CONN = CONFIG["basic"]["redis_conn"]
 REDIS_PORT = CONFIG["basic"]["redis_port"]
 TOKEN = CONFIG["basic"]["bot_token"]
 NAME = TOKEN.split(':')[0] + CONFIG["advanced"]["bot_name_additional"]
@@ -69,7 +69,8 @@ mongodb = MongoClient(MONGO_CONN).sophie_old
 
 # Init Redis
 redis = redis.StrictRedis(
-    host=REDIS_COMM, port=REDIS_PORT, db='1', decode_responses=True)
+    host=REDIS_CONN, port=REDIS_PORT, db='1', decode_responses=True
+)
 
 tbot = TelegramClient(NAME, API_ID, API_HASH)
 
@@ -78,7 +79,7 @@ tbot.start(bot_token=TOKEN)
 
 # AIOGram
 bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML)
-storage = RedisStorage()
+storage = RedisStorage(host=REDIS_CONN, port=REDIS_PORT, db=2)
 dp = Dispatcher(bot, storage=storage)
 
 # Flask
