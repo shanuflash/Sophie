@@ -47,6 +47,9 @@ async def report_error(event, telethon=False):
 
     text = "I'm sorry, I get a trouble. This incident was reported!"
     text += f'{class_error}: {error}'
-
-    await msg.reply(text)
+    
+    try:
+        await msg.reply(text)
+    except Exception:
+        pass
     return
