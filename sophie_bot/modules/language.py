@@ -190,7 +190,7 @@ def lang_info(chat_id, pm=False):
 def get_strings(chat_id, module="", mas_name="STRINGS"):
     chat_lang = get_chat_lang(chat_id)
     if chat_lang not in LANGUAGES:
-        return False  # TODO: Change lang to en
+        return LANGUAGES['en'][mas_name][module]  # TODO: Change lang to en
 
     str = LANGUAGES[chat_lang][mas_name][module]
     return str
