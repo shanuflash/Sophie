@@ -19,7 +19,7 @@ import io
 
 from telethon.tl.functions.channels import (EditBannedRequest,
                                             GetParticipantRequest)
-from telethon.tl.types import ChannelParticipantCreator, ChatBannedRights
+from telethon.tl.types import ChannelParticipantCreator, ChatBannedRights, ChannelParticipantsAdmins
 
 from aiogram import types
 
@@ -160,12 +160,11 @@ async def join_fed_comm(message, strings, **kwargs):
     fed_id = message.get_args()
     chat_id = message.chat.id
     user = message.from_user.id
-    peep = await tbot(
-        GetParticipantRequest(
-            channel=chat_id, user_id=user,
-        )
-    )
-    if not peep.participant == ChannelParticipantCreator(user_id=user):
+
+    admins = await bot.get_chat_administrators(chat_id)
+    admin = [x for x in admins if x.user.id == user][0]
+
+    if not admin.status == 'creator':
         await message.reply(get_string('feds', 'only_creators', chat_id))
         return
 
@@ -190,12 +189,11 @@ async def join_fed_comm(message, strings, **kwargs):
 async def leave_fed_comm(message, strings, **kwargs):
     chat_id = message.chat.id
     user = message.from_user.id
-    peep = await tbot(
-        GetParticipantRequest(
-            channel=chat_id, user_id=user,
-        )
-    )
-    if not peep.participant == ChannelParticipantCreator(user_id=user):
+
+    admins = await bot.get_chat_administrators(chat_id)
+    admin = [x for x in admins if x.user.id == user][0]
+
+    if not admin.status == 'creator':
         await message.reply(get_string('feds', 'only_creators', chat_id))
         return
 
